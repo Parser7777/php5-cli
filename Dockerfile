@@ -20,3 +20,4 @@ RUN  set -xe \
         && mv phpredis-$PHPREDIS_VERSION /usr/src/php/ext/redis \
         && docker-php-ext-install redis \
     )
+    && rm -rf /var/lib/apt/lists/*
